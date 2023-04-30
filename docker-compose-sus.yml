@@ -1,0 +1,19 @@
+version: '3'
+service:
+  webserver:
+    image: nginx
+    ports:
+    - "8080:80"
+    volumes:
+    - myVol:/usr/share/nginx/html
+    links:
+    - redis
+
+  db:
+    image: redis
+
+volumes:
+  myVol:{}
+
+
+   

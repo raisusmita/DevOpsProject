@@ -1,0 +1,1 @@
+{"virtualbox":{"/opt/data":{"guestpath":"/opt/data","hostpath":"C:/Users/susmita.rai/Downloads/DevOpsProject/tmp","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/Users/susmita.rai/Downloads/DevOpsProject/tmp","disabled":false,"__vagrantfile":true}}}

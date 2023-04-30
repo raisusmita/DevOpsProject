@@ -1,0 +1,22 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+BOX_NAME = "ubuntu/focal64"
+MEMORY = "10000"
+MACHINE_IP = "192.168.33.20"
+CPUS = 2
+
+Vagrant.configure("2") do |config|
+  config.vm.box = BOX_NAME
+
+   config.vm.network "private_network", ip: MACHINE_IP
+
+ #  config.vm.network "public_network"
+
+   config.vm.provider "virtualbox" do |vb|
+     vb.memory = MEMORY
+     vb.cpus = CPUS
+   end
+
+end
+
